@@ -1,0 +1,936 @@
+/*html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    line-height: 150%;
+    font-style: normal;
+    color: white;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    background-image: url('images/bg.jpeg');
+    height: 1294px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.line {
+    border-bottom: 1px solid rgba(126, 134, 142, 0.1);
+}
+
+.nav {
+    padding-top: 37px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+li {
+    color: white;
+}
+
+/*p,*/
+h1,
+h2 {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts {
+    display: flex;
+}
+
+.name {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 143%;
+    padding-top: 10px;
+    width: 179px;
+}
+
+.map,
+.tel {
+    margin-right: 15px;
+}
+
+.map {
+    width: 12px;
+    height: 17px;
+}
+
+.tel {
+    width: 19px;
+    height: 19px;
+}
+
+.contacts-item {
+    font-size: 12px;
+    line-height: 150%;
+    width: 122px;
+    height: 26px;
+    margin-right: 80px;
+}
+
+.two-item {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.number {
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+    display: block;
+}
+
+.main-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-main {
+    margin-top: 190px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+}
+
+.wishes-title {
+    color: #2E363E;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    border: none;
+    text-decoration: none;
+}
+
+.likely-cake-title,
+.cook-cake-title,
+.Julia-title {
+    display: flex;
+    width: 132px;
+    height: 37px;
+    background-color: #F2F6FA;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 11px;
+    color: #2E363E;
+    text-transform: uppercase;
+}
+
+.cake-coast-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    width: 647px;
+    margin: 24px 0;
+}
+
+.cake-time-title {
+    font-size: 24px;
+    line-height: 143%;
+    width: 544px;
+}
+
+.catalog-title {
+    display: flex;
+    margin: 40px 0 0 0;
+    width: 507px;
+}
+
+.button-cat,
+.buy-cake-button,
+.cook-cake-button,
+.Julia-button,
+.form-button {
+    display: flex;
+    width: 277px;
+    height: 88px;
+    background-color: #FED84C;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 152%;
+    color: #2E363E;
+    margin-right: 20px;
+}
+
+.cakes-count-title {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.first-img {
+    position: absolute;
+    left: -95px;
+    right: 1819.35px;
+    top: 340.77px;
+    bottom: 751.83px;
+    transform: rotate(-45.17deg);
+}
+
+.second-img {
+    position: absolute;
+    left: 1740.02px;
+    right: -90.02px;
+    top: 109px;
+    bottom: 1010px;
+    transform: rotate(28.32deg);
+}
+
+.third-img {
+    position: absolute;
+    left: 1451.2px;
+    right: 83.15px;
+    top: 880.35px;
+    bottom: -52.75px;
+    transform: rotate(-148.51deg);
+}
+
+.main-main {
+    position: relative;
+}
+
+.buy-cakes {
+    padding-top: 80px;
+    color: #2E363E;
+    position: relative;
+}
+
+.many-cakes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cake {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-bottom: 20px;
+}
+
+.section-cake {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #2E363E;
+    padding: 50px 44px;
+    border: 1px solid #F2F6FA;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.buy-cake-img {
+    width: 380px;
+    height: 245px;
+}
+
+.buy-cake-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 143%;
+    margin-bottom: 12px;
+}
+
+.buy-cake-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.buy-cake-coast {
+    font-size: 24px;
+    font-weight: 500;
+    color: #434B53;
+    margin-bottom: 14px;
+}
+
+.buy-cake-button {
+    width: 163px;
+    height: 68px;
+    font-size: 18px;
+    line-height: 152%;
+}
+
+.first-img-second {
+    position: absolute;
+    width: 170px;
+    height: 174px;
+    left: -100px;
+    right: 1536px;
+    top: 210.19px;
+    bottom: 1371.81px;
+    transform: rotate(-63.54deg);
+}
+
+.second-img-second {
+    position: absolute;
+    width: 161px;
+    height: 167px;
+    left: 1108px;
+    right: 75px;
+    top: 957px;
+    bottom: 567px;
+    transform: rotate(-180.00deg);
+}
+
+.third-img-second {
+    position: absolute;
+    width: 108.93px;
+    height: 112.99px;
+    left: -100px;
+    right: 75px;
+    bottom: 430px;
+    transform: rotate(92.61deg);
+}
+
+.cook-cake {
+    background-color: #081130;
+    height: 1352px;;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.top-cloud {
+    position: absolute;
+    width: 1920px;
+    height: 330px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 1022px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    width: 1920px;
+    height: 489px;
+    left: 0;
+    right: 0;
+    top: 863px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hand {
+    position: absolute;
+    width: 1090px;
+    height: 1034px;
+    left: -104px;
+    right: 934px;
+    top: 330px;
+    bottom: -12px;
+    z-index: -2;
+}
+
+.first-img-third {
+    position: absolute;
+    width: 110px;
+    height: 114px;
+    left: 331px;
+    right: 1340px;
+    top: 390px;
+    bottom: 848px;
+    transform: rotate(90.00deg);
+    filter: blur(2px);
+}
+
+.second-img-third {
+    position: absolute;
+    width: 152.04px;
+    height: 156.44px;
+    left: 1659px;
+    right: 98.75px;
+    top: 320.61px;
+    bottom: 682.95px;
+    transform: rotate(-79.84deg);
+    filter: blur(2px);
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 409px;
+}
+
+.main-content-double {
+    display: flex;
+    flex-direction: column;
+    width: 481px;
+    gap: 35px;
+}
+
+.cook-cake-title {
+    width: 226px;
+    height: 37px;
+}
+
+.cook-cake-descripton-title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    width: 481px;
+}
+
+.cook-cake-description {
+    font-size: 21px;
+    line-height: 143%;
+    letter-spacing: -0.2px;
+}
+
+.cook-cake-button {
+    width: 320px;
+    height: 88px;
+}
+
+.Julia {
+    position: relative;
+    height: 830px;
+    padding-top: 97px;
+}
+
+.Julia-cook {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+}
+
+#figure {
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    left: 674px;
+    right: 378px;
+    top: 167px;
+    bottom: 66px;
+    background: #FED84C;
+    border-radius: 50%;
+}
+
+.Julia-img-underground {
+    position: absolute;
+    left: 674px;
+    right: 378px;
+    top: 167px;
+    bottom: 66px;
+}
+
+.Julia-img-main {
+    position: absolute;
+    left: 736px;
+    right: 340px;
+    top: -55px;
+    bottom: 66px;
+}
+
+.first-img-fourth {
+    position: absolute;
+    width: 159px;
+    height: 163px;
+    left: 725px;
+    right: 801px;
+    top: 103.28px;
+    bottom: 390.72px;
+    transform: rotate(-5.18deg);
+    filter: blur(2px);
+}
+
+.second-img-fourth {
+    position: absolute;
+    width: 190px;
+    height: 198px;
+    filter: blur(2px);
+    transform: rotate(150.00deg);
+    left: 999.54px;
+    right: -1415.16px;
+    top: 86.47px;
+    bottom: -255px;
+}
+
+.third-img-fourth {
+    position: absolute;
+    width: 190px;
+    height: 198px;
+    filter: blur(2px);
+    transform: rotate(165.00deg);
+    left: 1023.16px;
+    right: -1426.77px;
+    top: 80.28px;
+    bottom: -287.8px;
+}
+
+.fourth-img-fourth {
+    position: absolute;
+    width: 190px;
+    height: 198px;
+    filter: blur(2px);
+    transform: rotate(-180.00deg);
+    left: 1044.39px;
+    right: -1427px;
+    top: 94.28px;
+    bottom: -336.55px;
+}
+
+.Julia-title {
+    width: 191px;
+    height: 37px;
+    font-size: 11px;
+}
+
+.Julia-description {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #2E363E;
+}
+
+.Julia-description-list {
+    margin-top: 36px;
+    list-style-type: disc;
+}
+
+.description-list-item {
+    font-size: 18px;
+    color: #2E363E;
+    margin-bottom: 30px;
+}
+
+.description-list-item::marker {
+    color: #5D6AFB;
+    font-size: 29px;
+}
+
+.Julia-the-conditer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 389px;
+    left: 567px;
+}
+
+.name-surname {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-left: 20px; 
+    width: 287px; 
+    height: 60px;
+    transform: skew(0.98turn, 0deg);
+    border-radius: 6px;
+    background: #2E363E;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.my-conditer {
+    font-size: 18px;
+    line-height: 22px;
+    width: 218px;
+    height: 52px;
+    background: #F2F6FA;
+    color: #2E363E;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    transform: skew(0.98turn, 0deg);
+}
+
+.reviews {
+    position: relative;
+    overflow: hidden;
+    height: 1565px;
+    background-color: #081130;
+}
+
+.top-cloud-second {
+    position: absolute;
+    top: 0px;
+}
+
+.bottom-cloud-second {
+    position: absolute;
+    bottom: 0px;
+}
+
+.reviews-title {
+    text-align: center;
+    padding-top: 276px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1px;
+}
+
+.first-feedback,
+.second-feedback,
+.third-feedback {
+    position: absolute;
+    width: 900px;
+    height: 475px;
+    padding: 70px 140px;
+    background-color: white;
+    border: 2px solid rgb(226, 234, 242);
+    border-radius: 5px;
+    box-shadow: 2px 8px 16px 0px rgba(194, 198, 208, 0.06);
+}
+
+
+.feedback-active {
+    top: 392px;
+}
+
+.left-feedback-not-active {
+    top: 420px;
+    left: -85%;
+    width: 650px;
+    height: 475px;
+    filter: brightness(40%);
+}
+
+.right-feedback-not-active {
+    top: 420px;
+    right: -85%;
+    width: 650px;
+    height: 475px;
+    filter: brightness(40%)
+}
+
+.first-feedback-content,
+.second-feedback-content,
+.third-feedback-content {
+    display: flex;
+    background-color: white;
+    color: #2E363E;
+}
+
+.text-feedback {
+    width: 50%;
+}
+
+.photo-feedback {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.third-feedback .feedback-item-title {
+    margin: 20px 0 20px 0;
+}
+
+.third-feedback .feedback-item-main {
+    margin-bottom: 10px;
+}
+
+.feedback-item-title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 143%;
+    color: #2E363E;
+    margin: 30px 0 24px 0;
+}
+
+.feedback-item-main {
+    font-size: 15px;
+    line-height: 170%;
+    margin-bottom: 24px;
+}
+
+.feedback-full {
+    color: #4A94FF;
+    border-bottom: 1px dashed rgb(74, 148, 255);
+}
+
+.name-human {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 143%;
+    margin: 30px 0 6px 0;
+    color: #2E363E;
+}
+
+.home-human {
+    font-size: 16px;
+    line-height: 170%;
+    color: #A6AEB6;
+}
+
+.button-left {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background: rgb(254, 216, 76);
+    border-radius: 100px;
+    top: 1113px;
+    left: 870px;
+}
+
+.button-right {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background: rgb(254, 216, 76);
+    border-radius: 100px;
+    top: 1113px;
+    right: 870px;
+}
+
+.first-img-fifth{
+    position: absolute;
+    top: 389px;
+    right: 275px;
+    width: 152px;
+    height: 156px;
+    filter: blur(2px);
+    transform: rotate(-134.21deg);
+}
+
+.second-img-fifth {
+    position: absolute;
+    top: 270px;
+    left: 196px;
+    width: 126.68px;
+    height: 131.96px;
+    filter: blur(2px);
+    transform: rotate(-120.00deg);
+}
+
+.aside {
+    padding-bottom: 2px;
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #2E363E;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.orders h1 {
+    color: #2E363E;
+}
+
+.title-orders-item {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    text-shadow: 0px 4px 4px #00000025;
+}
+
+.text-order-item {
+    font-size: 24px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.photo-preview {
+    width: 632px;
+    height: 444px;
+}
+
+.footer {
+    position: relative;
+    background: #081130;
+    height: 912px;
+    overflow: hidden;
+}
+
+.top-cloud-third {
+    position: absolute;
+}
+
+.contacts-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2E363E;
+    background-color: white;
+    padding: 70px 99px;
+    margin-top: 300px;
+    margin-bottom: 80px;
+    border-radius: 8px;
+}
+
+.contacts-phone h2 {
+    color: #2E363E;
+}
+
+.phone-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 133%;
+    margin-bottom: 12px;
+}
+
+.phone-title-object {
+    font-size: 21px;
+    margin-bottom: 36px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-agress {
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+    width: 380px;
+    height: 85px;
+    border-radius: 8px;
+    background: #F2F6FA;
+    margin-right: 20px;
+}
+
+.form-tel {
+    border: none;
+    margin-left: 6px;
+    background: #F2F6FA;
+    color: #7E868E;
+    font-size: 15px;
+}
+
+.form-tel:focus {
+    outline: none;
+}
+
+.form-button {
+    border: none;
+    width: 380px;
+}
+
+.label-politic {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 11px;
+    line-height: 130%;
+}
+
+.label-politic input {
+    width: 12px;
+    height: 12px;
+}
+
+.form-object-span {
+    text-decoration: underline;
+    color: #7E868E;
+}
+
+.footer-bottom-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 685px;
+    margin: auto;
+}
+
+.footer-bottom-list li:nth-child(4) {
+    margin-top: 22px;
+}
+
+.footer-bottom-object {
+    color: #7E868E;
+}
+
+.footer-list-object {
+    font-size: 12px;
+}
+
+.first-img-sixth {
+    position: absolute;
+    width: 106.67px;
+    height: 111px;
+    left: -50.8px;
+    right: 1530.14px;
+    top: -51.12px;
+    bottom: 458.6px;
+    filter: blur(2px);
+    transform: rotate(-94.95deg);
+}
+
+.second-img-sixth {
+    position: absolute;
+    width: 199.13px;
+    height: 199.29px;
+    left: -153.88px;
+    right: 1464.75px;
+    top: 281.7px;
+    bottom: -90.99px;
+    transform: rotate(273deg);
+}
+
+.third-img-sixth {
+    position: absolute;
+    width: 146.55px;
+    height: 153.21px;
+    left: 1117px;
+    right: 1530px;
+    top: 336px;
+    bottom: 281px;
+    transform: rotate(76.12deg);
+    filter: blur(1px);
+}
+
+.fourth-img-sixth {
+    position: absolute;
+    width: 173.18px;
+    height: 173.97px;
+    left: 1117.75px;
+    right: 204.07px;
+    top: -70.12px;
+    bottom: 562.03px;
+    transform: rotate(44deg);
+}
